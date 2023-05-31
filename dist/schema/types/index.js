@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.responseTypeDefs = exports.scalarTypeDefs = exports.userTypeDefs = exports.postTypeDefs = void 0;
+const postTypeDefs_1 = require("./postTypeDefs");
+Object.defineProperty(exports, "postTypeDefs", { enumerable: true, get: function () { return postTypeDefs_1.postTypeDefs; } });
+const userTypeDefs_1 = require("./userTypeDefs");
+Object.defineProperty(exports, "userTypeDefs", { enumerable: true, get: function () { return userTypeDefs_1.userTypeDefs; } });
+const responseTypeDef_1 = require("./responseTypeDef");
+Object.defineProperty(exports, "responseTypeDefs", { enumerable: true, get: function () { return responseTypeDef_1.responseTypeDefs; } });
+const scalarTypeDefs_1 = require("./scalarTypeDefs");
+Object.defineProperty(exports, "scalarTypeDefs", { enumerable: true, get: function () { return scalarTypeDefs_1.scalarTypeDefs; } });

@@ -1,0 +1,44 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "dev:server": "nodemon --watch './**/*.ts' --exec 'ts-node' app/index.ts",
+    "build": "tsc",
+    "knex": "./node_modules/.bin/knex --knexfile app/database/knexfile.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@apollo/server": "^4.7.1",
+    "@types/express": "^4.17.17",
+    "@types/node": "^20.2.3",
+    "apollo-server-core": "^3.12.0",
+    "apollo-server-express": "^3.12.0",
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.22",
+    "pg": "^8.11.0",
+    "stream-promise": "^3.2.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/body-parser": "^1.19.2",
+    "@types/graphql-upload": "^16.0.0",
+    "@types/jest": "^29.5.1",
+    "@types/jsonwebtoken": "^9.0.2",
+    "@types/lodash": "^4.14.194",
+    "@types/pg": "^8.6.6",
+    "bcrypt": "^5.1.0",
+    "jest": "^29.5.0",
+    "jsonwebtoken": "^9.0.0",
+    "knex": "^2.4.2",
+    "lodash": "^4.17.21",
+    "ts-jest": "^29.1.0"
+  }
+}

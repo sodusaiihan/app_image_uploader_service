@@ -1,0 +1,25 @@
+version: '3'
+services:
+  services:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 4000:4000
+    depends_on:
+      - db
+    environment:
+      - POSTGRES_HOST=localhost
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=1234
+      - POSTGRES_DB=database
+
+  db:
+    image: postgres
+    restart: always
+    environment:
+      - POSTGRES_USER=sodoo
+      - POSTGRES_PASSWORD=sodoo
+      - POSTGRES_DB=database
+    ports:
+      - 5432:5432
